@@ -63,7 +63,7 @@ class _Animated3DCardState extends State<Animated3DCard>
       duration: const Duration(seconds: 3),
       vsync: this,
     );
-    _animation = Tween<double>(begin: 0, end: 1).animate(CurvedAnimation(
+    _animation = Tween<double>(begin: 0, end: 4).animate(CurvedAnimation(
       parent: _controller,
       curve: Curves.easeInOut,
     ));
@@ -139,3 +139,13 @@ class _Animated3DCardState extends State<Animated3DCard>
     );
   }
 }
+
+
+
+// Explanation of the Code:
+// GestureDetector: Detects drag movements, which update the rotation angles.
+// Transform and Matrix4: Applies 3D transformations to the card based on user drag, giving it a 3D rotation.
+// AnimationController: Resets the card to its original position smoothly when dragging ends.
+// Features:
+// The card rotates based on user drag.
+// Smooth reset to the default position when the user releases the card.
