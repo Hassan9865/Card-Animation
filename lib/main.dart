@@ -1,26 +1,3 @@
-// import 'package:card_animation/home_view.dart';
-// import 'package:flutter/material.dart';
-
-// void main() {
-//   runApp(const MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//         debugShowCheckedModeBanner: false,
-//         title: 'UI Challenge',
-//         theme: ThemeData(
-//           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-//           useMaterial3: true,
-//         ),
-//         home: const HomeView());
-//   }
-// }
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -63,7 +40,7 @@ class _Animated3DCardState extends State<Animated3DCard>
       duration: const Duration(seconds: 3),
       vsync: this,
     );
-    _animation = Tween<double>(begin: 0, end: 4).animate(CurvedAnimation(
+    _animation = Tween<double>(begin: 0, end: 1).animate(CurvedAnimation(
       parent: _controller,
       curve: Curves.easeInOut,
     ));
@@ -123,14 +100,14 @@ class _Animated3DCardState extends State<Animated3DCard>
               ),
             ),
             child: Center(
-              // child: Text(
-              //   "3D Card",
-              //   style: TextStyle(
-              //     color: Colors.white,
-              //     fontSize: 24,
-              //     fontWeight: FontWeight.bold,
-              //   ),
-              // ),
+              child: Text(
+                "3D Card",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               child: Image.asset("assets/pic.png"),
             ),
           ),
