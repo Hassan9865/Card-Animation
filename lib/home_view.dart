@@ -80,7 +80,9 @@ class _Animated3DCardState extends State<Animated3DCard>
               ),
             ),
             child: Center(
-              // child: Text(
+              //
+              //
+              //child: Text(
               //   "3D Card",
               //   style: TextStyle(
               //     color: Colors.white,
