@@ -24,8 +24,6 @@ class MyApp extends StatelessWidget {
 
 
 
-
-
 // Explanation of the Code:
 // GestureDetector: Detects drag movements, which update the rotation angles.
 // Transform and Matrix4: Applies 3D transformations to the card based on user drag, giving it a 3D rotation.
